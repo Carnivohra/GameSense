@@ -18,6 +18,12 @@ public abstract class PacketListener(PacketRecorder recorder)
         
         var gameEvent = Parser.Parse(packet);
         
+        if (gameEvent is null) 
+        {
+            Console.WriteLine($"Could not add GameEvent to demo. GameEvent is null. Ignoring packet '{packet}'.");
+            return;
+        }
+        
         if (recorder.Demo is null)
         {
             Console.WriteLine($"Could not add GameEvent '{gameEvent}' to demo. Demo is null.");
