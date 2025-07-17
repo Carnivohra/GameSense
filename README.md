@@ -37,7 +37,9 @@ GameSense/
 └── Utils/               # GameManager, PluginManager, DeviceManager
 ```
 
-## Usage
+---
+
+## 🔧 Usage
 
 **🧩 Plugin Architecture**
 
@@ -138,6 +140,8 @@ public class MyPacketParser : PacketParser
 }
 ```
 
-**📄 License**
+---
+
+## 📄 License
 
 This project is licensed under the MIT License.
