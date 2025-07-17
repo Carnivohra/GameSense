@@ -56,6 +56,8 @@ public static class DeviceManager
             if (transportPacket is null)
                 return;
             
+            if (transportPacket.PayloadData == null || transportPacket.PayloadData.Length < 4)
+                return;
             
             foreach (var listener in Listeners)
             {
@@ -65,7 +67,7 @@ public static class DeviceManager
                 if (transportPacket.DestinationPort != listener.Port && transportPacket.SourcePort != listener.Port)
                     continue;
                 
-                listener.OnPacketArrival(packet);
+                listener.OnPacketArrival(transportPacket);
             }
         }
         catch (Exception) { }
