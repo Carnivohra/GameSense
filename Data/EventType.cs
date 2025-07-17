@@ -6,5 +6,6 @@ public enum EventType
     Jump,
     Attack,
     Heal,
-    Custom
+    Custom,
+    Unknown
 }
