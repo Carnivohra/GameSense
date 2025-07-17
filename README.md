@@ -3,7 +3,7 @@
 **GameSense** is an AI-first framework designed to understand, analyze, and learn from the entire game environment.
 Its ultimate goal is to become a generalized game intelligence capable of observing and adapting to gameplay dynamics across genres and platforms.
 At its core, **GameSense** is a modular AI system built around GameEvents: abstract, high-level representations of in-game actions and interactions such as movement, combat, environment changes, communication and more.
-GameSense collects these events from games via network traffic, APIs, or other sources and feeds them into an AI model.
+**GameSense** collects these events from games via network traffic, APIs, or other sources and feeds them into an AI model.
 
 **⚠️ Status:** Work in Progress.
 GameSense is currently under active development and not yet ready for production use.
