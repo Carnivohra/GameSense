@@ -1,4 +1,8 @@
+
 # 🧠 GameSense
+[![Discord](https://img.shields.io/discord/1394754707884474519?label=Discord&logo=discord&color=5865F2&logoColor=white)](https://discord.gg/yDSrttSFpM)
+
+---
 
 **GameSense** is an AI-first framework designed to understand, analyze, and learn from the entire game environment.
 Its ultimate goal is to become a generalized game intelligence capable of observing and adapting to gameplay dynamics across genres and platforms.
