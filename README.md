@@ -1,6 +1,6 @@
 # 🧠 GameSense
 
-**GameSense** is a modular AI framework for analyzing and optimizing gameplay. It allows dynamic integration of any game through a plugin-based system (DLL) and is designed to record gameplay data for use in machine learning or AI logic.
+**GameSense** is a modular AI framework focused on understanding and optimizing gameplay behavior. It’s designed to evolve into a game-aware artificial intelligence that can analyze player behavior and in-game environments across different genres and game types.
 
 > Goal: Create a generic learning environment where games are abstracted, and trainable AI can learn to achieve optimal results.
 
@@ -11,11 +11,13 @@ GameSense is currently under active development and not yet ready for production
 
 ## ✨ Features
 
-- 🔌 **Plugin-based**: Load external games via DLLs with a simple interface
-- 🧠 **AI-ready design**: Recorders track gameplay for analysis and training
-- 📦 **PacketRecorder support**: Record gameplay events from raw network packets with custom parsers
-- 🔄 **Dynamic Loading**: DLL-based game modules are automatically scanned and initialized
-- 🧰 **Extensible API**: Base classes for games, plugins, recorders, parsers & listeners
+- 🔌 **Plugin-based Architecture** – Add support for new games via external DLLs
+- 🧠 **AI-Centric Design** – The core of GameSense is an intelligent agent that observes and learns from player behavior and environmental context
+- 📡 **PacketRecorder Module** – Capture and interpret multiplayer game traffic through custom network parsers (optional)
+- 🎮 **Recorder Support** – Support for logging player and environmental data even in offline/singleplayer games
+- 🧰 **Extensible API** – Build games, recorders, parsers, and listeners with minimal effort
+- ♻️ **Cross-Game Reasoning** – The AI interprets shared mechanics like movement, combat, and interaction across multiple games
+- 🌐 **Environment Awareness** – Learn not only from the player's behavior but also from in-game surroundings, entities, and world state
 
 ---
 
@@ -125,8 +127,9 @@ public class MyPacketParser : PacketParser
     {
         return new GameEvent
         {
-            Timestamp = DateTime.UtcNow,
-            Description = "Parsed game event"
+            Timestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(),
+            Type = EventType.Unknown,
+            Trigger = EventTrigger.System
         };
     }
 }
