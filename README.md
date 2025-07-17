@@ -19,6 +19,18 @@ GameSense is currently under active development and not yet ready for production
 
 ---
 
+## 📦 Dependencies
+
+GameSense uses the following external libraries via NuGet:
+
+- [SharpPcap](https://github.com/chmorgan/sharppcap) – Licensed under [LGPL-3.0](https://www.gnu.org/licenses/lgpl-3.0.html)
+- [PacketDotNet](https://github.com/chmorgan/packetnet) – Licensed under [LGPL-3.0](https://www.gnu.org/licenses/lgpl-3.0.html)
+
+These packages are used via dynamic linking (NuGet). No modifications have been made.
+If you distribute compiled binaries of GameSense, please include the original license files of these packages.
+
+---
+
 ## 🔧 Usage
 
 **🧩 Plugin Architecture**
