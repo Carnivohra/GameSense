@@ -22,7 +22,8 @@ public static class PluginManager
     
     private static void CreateDefaultDirectory()
     {
-        if (Directory.Exists(PluginsPath)) return;
+        if (Directory.Exists(PluginsPath))
+            return;
         
         var directory = Directory.CreateDirectory(PluginsPath);
         Console.WriteLine($"Directory '{directory.Name}' has been created.");
@@ -117,7 +118,8 @@ public static class PluginManager
 
     private static void UnloadAll()
     {
-        foreach (var pluginName in Plugins.Keys) Unload(pluginName);
+        foreach (var pluginName in Plugins.Keys.ToList())
+            Unload(pluginName);
     }
     
 }
