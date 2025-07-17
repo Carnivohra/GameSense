@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>GameSense</RootNamespace>
+        <LangVersion>13</LangVersion>
+        <OutputType>Exe</OutputType>
+        <Authors>Carnivohra</Authors>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="PacketDotNet" Version="1.4.9-pre44" />
+      <PackageReference Include="SharpPcap" Version="6.3.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="SharpPcap">
+        <HintPath>..\..\..\..\.nuget\packages\sharppcap\6.3.1\lib\net8.0\SharpPcap.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
