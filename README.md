@@ -4,7 +4,7 @@
 
 > Goal: Create a generic learning environment where games are abstracted, and trainable AI can learn to achieve optimal results.
 
-⚠️ Status: Work in Progress
+**⚠️ Status:** Work in Progress
 GameSense is currently under active development and not yet ready for production use.
 
 ---
