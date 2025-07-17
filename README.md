@@ -1,8 +1,9 @@
 # 🧠 GameSense
 
-**GameSense** is a modular AI framework focused on understanding and optimizing gameplay behavior. It’s designed to evolve into a game-aware artificial intelligence that can analyze player behavior and in-game environments across different genres and game types.
-
-> Goal: Create a generic learning environment where games are abstracted, and trainable AI can learn to achieve optimal results.
+**GameSense** is an AI-first framework designed to understand, analyze, and learn from the entire game environment.
+Its ultimate goal is to become a generalized game intelligence capable of observing and adapting to gameplay dynamics across genres and platforms.
+At its core, **GameSense** is a modular AI system built around GameEvents: abstract, high-level representations of in-game actions and interactions such as movement, combat, environment changes, communication and more.
+GameSense collects these events from games via network traffic, APIs, or other sources and feeds them into an AI model.
 
 **⚠️ Status:** Work in Progress.
 GameSense is currently under active development and not yet ready for production use.
@@ -11,13 +12,12 @@ GameSense is currently under active development and not yet ready for production
 
 ## ✨ Features
 
-- 🔌 **Plugin-based Architecture** – Add support for new games via external DLLs
-- 🧠 **AI-Centric Design** – The core of GameSense is an intelligent agent that observes and learns from player behavior and environmental context
-- 📡 **PacketRecorder Module** – Capture and interpret multiplayer game traffic through custom network parsers (optional)
-- 🎮 **Recorder Support** – Support for logging player and environmental data even in offline/singleplayer games
-- 🧰 **Extensible API** – Build games, recorders, parsers, and listeners with minimal effort
-- ♻️ **Cross-Game Reasoning** – The AI interprets shared mechanics like movement, combat, and interaction across multiple games
-- 🌐 **Environment Awareness** – Learn not only from the player's behavior but also from in-game surroundings, entities, and world state
+- **🧠 Pluggable AI Core:** Designed to analyze and learn from universal GameEvents
+- **🌐 Environment Centric Design:** Includes spatial, temporal, and systemic information
+- **🔌 Plugin System:** Add optional support for specific games and systems
+- **📡 Packet Recorder:** Log data from multiplayer games for replay and training
+- **📽️ Game-Agnostic Architecture:** Works with or without live gameplay or game hooks
+- **🧱 Extensible Event Model:** Capture everything from movement to world state transitions
 
 ---
 
