@@ -57,9 +57,9 @@ public class MyPlugin : Plugin
 }
 ```
 
-**📦 Plugin Metadata (Required!)**
+**📦 Plugin Metadata Requirements**
 
-To enable GameSense to discover and load your plugin correctly, each compiled DLL must embed a meta.json resource file in the following format:
+To enable GameSense to automatically discover and load your plugin correctly, each compiled DLL must embed a meta.json resource file in the following format:
 
 ```json
 {
@@ -136,4 +136,4 @@ public class MyPacketParser : PacketParser
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](./LICENSE).
