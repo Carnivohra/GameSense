@@ -19,26 +19,6 @@ GameSense is currently under active development and not yet ready for production
 
 ---
 
-## 🛠 Project Structure
-
-```plaintext
-GameSense/
-├── Core/
-│   ├── Game.cs          # Base class for a game
-│   └── Plugin.cs        # Abstract plugin entry point
-├── Data/
-│   ├── Recorder.cs      # Base class for recorders
-│   ├── GameDemo.cs      # Represents a recording session
-│   └── Recorders/
-│       └── Packet/
-│           ├── PacketRecorder.cs
-│           ├── PacketListener.cs
-│           └── PacketParser.cs
-└── Utils/               # GameManager, PluginManager, DeviceManager
-```
-
----
-
 ## 🔧 Usage
 
 **🧩 Plugin Architecture**
