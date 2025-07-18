@@ -8,7 +8,7 @@ public abstract class PacketListener(PacketRecorder recorder)
     public ushort Port { get; protected set; }
     protected PacketParser? Parser { get; init; }
 
-    public void OnPacketArrival(PacketDotNet.Packet packet)
+    public void OnPacketArrival(TransportPacket packet)
     {
         if (Parser is null)
         {
